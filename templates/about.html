@@ -1,0 +1,270 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+<div class='bg-gray-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
+    <div class='m-6'>
+        <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>About Me</p>
+        {% comment %} <p class='text-2xl font-bold grid place-items-center mb-8'>About Me</p> {% endcomment %}
+        <p class='text-justify'>
+            &#128075; Hi,<br><br>
+
+            My name is Hyoung-Soo Kim and I am a highly motivated and experienced developer with a passion for creating innovative solutions for the internet.<br><br>
+            <button class="group relative h-8 w-24 my-5 overflow-hidden bg-green-500 text-sm font-bold text-white">
+              Education
+            </button>
+            <span> Kyonggi Univ</span>
+            <hr>
+            <button class="group relative h-8 w-24 my-5 overflow-hidden bg-blue-500 text-sm font-bold text-white">
+              Experience
+            </button>
+            <span> Data & Process Engineering Laboratory Undergraduate Research Student</span>
+            <hr>
+            <button class="group relative h-8 w-24 my-5 overflow-hidden bg-red-500 text-sm font-bold text-white">
+              Awards
+            </button>
+            <span> kiit 2023 - Awarded the silver prize in the thesis section for undergraduate students</span>
+            <hr>
+            <button class="group relative h-8 w-24 my-5 overflow-hidden bg-purple-500 text-sm font-bold text-white">
+              Competition
+            </button>
+            <span> Naver Clova AI Rush</span>
+            <hr>
+
+            <br><br>
+            
+            I am continuously seeking new opportunities to expand my knowledge and improve my abilities as a developer, in order to assist clients in achieving their project goals.
+            {% comment %} I'm Ashish. I am passionate about developing things for the internet. This passion led me to learn various technologies such as Python, HTML, CSS, Javascript and so on.<br><br>
+
+            After completing my schooling in 2021, I looked forward to pursue further studies in Computer Science. Part time I started Freelancing, Blogging and learning various programming languages. I learned HTML, CSS, Javascript, Python, SQL and various CSS Frameworks such as Tailwind CSS and Python Libraries such as Django.<br><br>
+
+            Using these skills I developed various real world applications such as Passsave - Password Manager using Python, PyShiels - Antivirus Application using Python,Full Stack Blogging Website and more. Checkout more projects on Projects page.<br><br>
+
+            Currently I am extending my learnings to be a skillled developer who can assist you in your projects. {% endcomment %}
+        </p>
+        </div>
+    
+    </div>
+
+
+    <style>
+        
+        .progress-bar {
+            animation: progress-bar-animation 1s normal forwards;
+        }
+        @keyframes progress-bar-animation {
+            0%   {  width: 0%; }
+            100% {  width: 100%; }
+        }
+        .html {
+            animation: html-animation 3s normal forwards;
+        }
+        @keyframes html-animation {
+            0%   {  width: 0%; }
+            100% {  width: 95%; }
+        }
+        .css {
+            animation: css-animation 3s normal forwards
+        }
+        @keyframes css-animation {
+            0%   {  width: 0%; }
+            100% {  width: 85%; }
+        }
+        .js {
+            animation: js-animation 3s normal forwards
+        }
+        @keyframes js-animation {
+            0%   {  width: 0%; }
+            100% {  width: 70%; }
+        }
+        .py {
+            animation: py-animation 3s normal forwards
+        }
+        @keyframes py-animation {
+            0%   {  width: 0%; }
+            100% {  width: 90%; }
+        }
+        .sql {
+            animation: sql-animation 3s normal forwards
+        }
+        @keyframes sql-animation {
+            0%   {  width: 0%; }
+            100% {  width: 80%; }
+        }
+    </style>
+
+    {% comment %} <script>
+        let html_progress = 0;
+        let html_invervalSpeed = 10;
+        let html_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let html_bar = document.querySelector('.html');
+            html_progressInterval = setInterval(function(){
+            html_progress += html_incrementSpeed;
+            html_bar.style.width = html_progress + "%";
+            if(html_progress >= 95){
+                clearInterval(html_progressInterval);
+            }
+        }, html_invervalSpeed);
+    });
+
+        let css_progress = 0;
+        let css_invervalSpeed = 10;
+        let css_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let css_bar = document.querySelector('.css');
+            css_progressInterval = setInterval(function(){
+            css_progress += css_incrementSpeed;
+            css_bar.style.width = css_progress + "%";
+            if(css_progress >= 80){
+                clearInterval(css_progressInterval);
+            }
+        }, css_invervalSpeed);
+    });
+
+        let js_progress = 0;
+        let js_invervalSpeed = 10;
+        let js_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let js_bar = document.querySelector('.js');
+            js_progressInterval = setInterval(function(){
+            js_progress += js_incrementSpeed;
+            js_bar.style.width = js_progress + "%";
+            if(js_progress >= 60){
+                clearInterval(js_progressInterval);
+            }
+        }, js_invervalSpeed);
+    });
+
+    let py_progress = 0;
+    let py_invervalSpeed = 10;
+    let py_incrementSpeed = 1;
+    document.addEventListener("DOMContentLoaded", function(){
+        let py_bar = document.querySelector('.py');
+        py_progressInterval = setInterval(function(){
+        py_progress += py_incrementSpeed;
+        py_bar.style.width = py_progress + "%";
+        if(py_progress >= 80){
+            clearInterval(py_progressInterval);
+        }
+    }, py_invervalSpeed);
+});
+
+    let sql_progress = 0;
+    let sql_invervalSpeed = 10;
+    let sql_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+        let sql_bar = document.querySelector('.sql');
+        sql_progressInterval = setInterval(function(){
+        sql_progress += sql_incrementSpeed;
+        sql_bar.style.width = sql_progress + "%";
+        if(sql_progress >= 85){
+            clearInterval(sql_progressInterval);
+        }
+    }, sql_invervalSpeed);
+});
+
+    </script> {% endcomment %}
+</div>
+
+<div class='bg-gray-800 text-white p-5 md:py-8 md:px-20 lg:px-40 xl:px-60'>
+  <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Projects Completed</p>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/sff.png' %}" alt="image">
+          <div>
+            <a href="https://github.com/HyoungSooo/smart-factory-faker/blob/main/tutorial.ipynb"><p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">SFF - Smart Factory Faker<p></a>
+            <p class='text-justify my-3'>A library that can easily build a data set in a smart factory or process situation</p>
+            <ul class='mb-3'>
+              <li>&#9989; Developed a library using Python </li>
+              <li>&#9989;  Offers options that can be applied in a variety of situations</li>
+              <li>&#9989;  Deployed in pip environment
+              <li>&#9989;  26 Unique cloners, 35 Unique visitors, total 606 Views
+              </li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Python</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/HyoungSooo/smart-factory-faker/blob/main/tutorial.ipynb'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>        
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/chessassist.png' %}" alt="image">
+          <div>
+            <a href="https://github.com/HyoungSooo/pychess-assitance"><p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Pychess-Assitant<p></a>
+            <p class='text-justify my-3'>Real-time chess assistant using AI</p>
+            <ul class='mb-3'>
+              <li>&#9989;  Can change the chess board to fen format in real time </li>
+              <li>&#9989;  Provide a GUI</li>
+              </li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Python</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/HyoungSooo/pychess-assitance'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>        
+            </div>
+          </div>
+      </div>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/chessrush.png' %}" alt="image">
+          <div>
+            <a href="https://github.com/HyoungSooo/chess-rush"><p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Chess Rush</p></a>
+            <p class='text-justify my-3'>Chess Rush is a site that provides chess puzzle solving, automate mode.</p>
+            <ul class='mb-3'>
+              <li>&#9989; Large file data preprocessing experience</li>
+              <li>&#9989; REST API design</li>
+              <li>&#9989; DB transaction implementation experience</li>
+              <li>&#9989; CI / CD using github actions</li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> HTML</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> CSS</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Js</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Python</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Django</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Django-ninja</span>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Redis</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/HyoungSooo/chess-rush'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>
+              <a href='https://www.chess-rush.kro.kr/api/index/' target = '_blank'><button class='bg-blue-600 p-2 px-4 rounded-[6px] hover:bg-gray-800 hover:outline hover:outline-blue-600 transition delay-75 ease-in-out my-3'>Demo <i class="bi bi-box-arrow-up-right"></i></button></a>              
+            </div>
+          </div>
+      </div>
+      <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Developing Projects</p>
+      <div style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class='flex flex-col md:flex-row gap-4 md:gap-x-8 bg-gray-900 p-5 mb-4 rounded-lg'>
+          <img class="post-img-url rounded-lg object-cover" width='350px' height='180px' src="{% static 'images/puzzle.png' %}" alt="image">
+          <div>
+            <a href="https://github.com/HyoungSooo/smart-factory-faker/blob/main/tutorial.ipynb"><p style="font-family: Poppins-Bold" class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-blue-300 to-blue-600">Puzzle Collections<p></a>
+            <p class='text-justify my-3'>A library that can easily build a data set in a smart factory or process situation</p>
+            <ul class='mb-3'>
+              <li>&#9989; Developed a library using Python </li>
+              <li>&#9989;  Offers options that can be applied in a variety of situations</li>
+              <li>&#9989;  Deployed in pip environment
+              <li>&#9989;  26 Unique cloners, 35 Unique visitors, total 606 Views
+              </li>
+            </ul>
+            <span class='text-lg font-bold'>Technologies used</span><br>
+            <div class='flex space-x-2 my-3'>
+            <span class='text-xs bg-gradient-to-r from-cyan-500 to-blue-500 py-1 px-4 rounded-full'> Python</span>
+            </div>
+            <div class='flex space-x-4 my-3'>
+              <a href='https://github.com/HyoungSooo/smart-factory-faker/blob/main/tutorial.ipynb'  target = '_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-slate-700 outline hover:outline-none outline-slate-700 transition delay-75 ease-in-out my-3'><i class="bi bi-github"></i> Github</button></a>        
+            </div>
+          </div>
+      </div>
+      
+      <div class='flex justify-center'>
+        <a href='https://github.com/HyoungSooo' target='_blank' class=''><button class='bg-gray-800 p-2 px-4 rounded-[6px] hover:bg-blue-600 outline hover:outline-none outline-blue-600 transition delay-75 ease-in-out my-3'>Load more <i class="bi bi-arrow-clockwise font-extrabold"></i></button></a>
+      </div>
+</div>
+
+{% endblock %}
