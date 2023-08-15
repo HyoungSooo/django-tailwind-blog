@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block assets %}
+<link rel="stylesheet" href={% static 'css/nurikabe.css' %}>
+
+{% endblock assets %}
+
+{% block content %}
+
+<p class='hidden puzzle'>{{puzzle.problem}}</p>
+<div class='pt-10 bg-gray-800 nurikabe-container'>
+  <h1 class=' text-center text-blue-100 hover:text-blue-300 transition duration-300 font-extrabold text-5xl mb -10'>Nurikabe</h1>
+  <p id="feedback" class='text-white'></p>
+  <script src={% static 'js/nurikabe.js' %}></script>
+
+</div>
+{% endblock content %}

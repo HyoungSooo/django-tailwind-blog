@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from home import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', views.index, name='home'),
@@ -11,4 +12,5 @@ urlpatterns = [
     path('categories/', views.categories, name='categories'),
     path('search/', views.search, name='search'),
     path('thanks', views.thanks, name='thanks'),
+    path('puzzle/nurikabe/<int:id>', views.nurikabe, name='nurikabe')
 ]
