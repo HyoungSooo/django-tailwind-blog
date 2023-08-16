@@ -12,5 +12,7 @@ urlpatterns = [
     path('categories/', views.categories, name='categories'),
     path('search/', views.search, name='search'),
     path('thanks', views.thanks, name='thanks'),
-    path('puzzle/nurikabe/<int:id>', views.nurikabe, name='nurikabe')
+    path('puzzle/nurikabe/<int:id>', views.nurikabe, name='nurikabe'),
+    path('puzzle/tat/', TemplateView.as_view(template_name='tat.html  '),
+         name='nurikabe'),
 ]
